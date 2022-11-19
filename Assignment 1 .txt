@@ -1,0 +1,133 @@
+1)Why do we call Python as a general purpose and high-level programming language?
+ *	Its high level language because its can be read easily uses simple english language and general purpose language as it is used solve problems
+ 
+2)Why is Python called a dynamically typed language?
+ *	Variables don’t associate with any particular types
+ 
+3)List some pros and cons of Python programming language?
+ *	Pros: - Easy to learn
+			large community built in functions
+			High level language
+			Big data machine learning
+	cons: - limitation in speed
+			Security
+			memory insuffcient 
+			
+4)In what all domains can we use Python?
+ * 	AI & Machine Learning
+	Big data data science analyst 
+	
+5)What are variable and how can we declare them?
+* Variablesa are the name given to a specfic object to call them we can declare them just by using it and assgining values to it python will automatically determines data types
+
+6)How can we take an input from the user in Python?
+* Input form user can be done by using Input function 
+	Syntax :- a = input()
+	values provided by user will be stored in variable "a"
+
+7)What is the default datatype of the value that has been taken as an input using input() function?
+*  string 
+
+8)What is type casting?
+* Type casting is nothing but changing dtat types of variable we can do it by just giving datatype which you want to change
+	ex:-  a = 98 this is int
+	to convert into string we do a=str(a) it will be converted
+	
+9)Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+* Yes we can by using spilt function
+
+10)What are keywords?
+* Keywords are reserved words used for a specfic task to do.
+
+11)Can we use keywords as a variable? Support your answer with reason.
+* No we cant use keywords as variable they are used to define the syntax and structure of the Python language
+
+12)What is indentation? What's the use of indentaion in Python?
+* Indentation in python is used to tell that the group of statements belongs to a particular block of code. A block is a combination of all these statements
+
+13)How can we throw some output in Python?
+* By usimg print() function
+
+14)What are operators in Python?
+* +,-,/,%,*,//
+
+15)What is difference between / and // operators?
+* / gives floor division, // gives interger division.
+
+16) Write a code that gives following as an output.
+* print("iNeuroniNeuroniNeuroniNeuron")
+
+17)Write a code to take a number as an input from the user and check if the number is odd or even.
+
+number = int(input())
+if number%2 == 0:
+    print("Even")
+else:
+    print("odd")
+	
+18)What are boolean operator?
+* the operators that operate on the Boolean values
+
+19) What will the output of the following?
+```
+1 or 0 --> 1
+
+0 and 0 --> 0
+
+True and False and True -->False
+
+1 or 0 or 0 -->1
+```
+20) What are conditional statements in Python?
+* conditional statements are statements which executed when condition is satisfied 
+
+21)What is use of 'if', 'elif' and 'else' keywords?
+* if,elif,else are used to check conditions and provide output bassed on condition
+
+22)Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+
+age = int(input())
+if age >= 18:
+    print("I can vote")
+else:
+    print("I can't vote")
+	
+23)Write a code that displays the sum of all the even numbers from the given list.
+numbers = [12, 75, 150, 180, 145, 525, 50]
+numbers = [12, 75, 150, 180, 145, 525, 50]
+sum1=0
+for i in range(0,len(numbers)):
+    sum1 += numbers[i]
+print(sum1)
+
+24)Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+a=int(input())
+b=int(input())
+c=int(input())
+if a>b and a>c:
+    print(a)
+elif b>a and b>c:
+    print(b)
+else:
+    print(c)
+	
+25)Write a program to display only those numbers from a list that satisfy the following conditions
+
+- The number must be divisible by five
+
+- If the number is greater than 150, then skip it and move to the next number
+
+- If the number is greater than 500, then stop the loop
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+
+numbers = [12, 75, 150, 180, 145, 525, 50]
+sum1=0
+for i in range(0,len(numbers)):
+    if numbers[i] > 500:
+        break
+    elif numbers[i] % 5 == 0:
+        if numbers[i] > 150:
+            continue
+        sum1 += numbers[i]
+print(sum1)
